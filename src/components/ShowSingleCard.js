@@ -15,12 +15,12 @@ const ShowSingleCard = ({ show }) => {
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100"
           ></button>
-          <div className=" w-full block w-auto">
-            <ul className="font-medium flex flex-row p-4 p-0 mt-4 border border-gray-100 bg-gray-50 flex-row space-x-8 mt-0 border-0 bg-gray-900 ">
+          <div className=" hidden w-full md:block md:w-auto">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
                   href="#"
-                  className="block p-0 text-white bg-blue-700 bg-transparent text-blue-700"
+                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded bg-transparent hover:text-blue-700 p-0"
                 >
                   Home
                 </a>
@@ -28,7 +28,7 @@ const ShowSingleCard = ({ show }) => {
               <li>
                 <a
                   href="#"
-                  className="block p-0 text-gray-900 border-0 hover:text-blue-700 text-white "
+                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded bg-transparent hover:text-blue-700 p-0"
                 >
                   About
                 </a>
@@ -36,7 +36,7 @@ const ShowSingleCard = ({ show }) => {
               <li>
                 <a
                   href="#"
-                  className="block p-0 text-gray-900 border-0 hover:text-blue-700 text-white "
+                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded bg-transparent hover:text-blue-700 p-0"
                 >
                   Contact
                 </a>
@@ -49,20 +49,23 @@ const ShowSingleCard = ({ show }) => {
       <div className="flex items-center space-x-60 justify-center">
         {show.image && (
           <Image
-            className=""
+            className="pr-11"
             src={show.image?.original}
-            width={680}
-            height={1000}
+            width={500}
+            height={800}
             alt={show.name}
           />
         )}
-        <div className="font-sans text-2xl font-light">
-          <p>Genres: {show.genres}</p>
-          <p>Status: {show.status}</p>
-          <p>Date of Premiere: {show.premiered}</p>
-          <p>Date of Ending: {show.ended}</p>
+        <div>
+          {" "}
+          <div className="font-sans text-2xl font-light p-10">
+            <p>Genres: {show.genres}</p>
+            <p>Status: {show.status}</p>
+            <p>Date of Premiere: {show.premiered}</p>
+            <p>Date of Ending: {show.ended}</p>
+          </div>
+          <p className="font-sans font-light w-1/2 p-10">{show.summary}</p>
         </div>
-        <p className="font-sans font-light w-1/3">{show.summary}</p>
       </div>
       <section class="bg-gray-900">
         <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden">
