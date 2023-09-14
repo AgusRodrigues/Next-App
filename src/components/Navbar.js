@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Image src={`/assets/umai.svg`} width={300} height={64} alt={`Logo`} />
         <button
-          type="button" 
+          type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100"
         ></button>
         <div className=" hidden w-full md:block md:w-auto">
