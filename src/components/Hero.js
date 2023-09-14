@@ -22,11 +22,12 @@ const Hero = () => {
             </div>
           </div>
           <div class="description w-full sm: md:w-2/3 mt-16 text-gray-500 text-sm">
-            Tokyo, Japans busy capital, mixes the ultramodern and the
-            traditional, from neon-lit skyscrapers to historic temples. The
-            opulent Meiji Shinto Shrine is known for its towering gate and
-            surrounding woods. The Imperial Palace sits amid large public
-            gardens
+          Your Ultimate Destination for TV Show Insights! Dive into a world of
+            captivating television with us. Discover in-depth details, reviews,
+            and the latest updates on a wide range of TV shows, from timeless
+            classics to cutting-edge series. Whether you&apos;re a binge-watcher, a
+            die-hard fan, or just seeking your next obsession, we&apos;ve got you
+            covered. Explore, discuss, and stay tuned for all things TV!&apos;
           </div>
 
           <button class="uppercase mt-5 text-sm font-semibold hover:underline">
