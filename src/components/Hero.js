@@ -12,7 +12,7 @@ const Hero = () => {
               <p class='text-2xl text-gray-900 font-semibold pt-2'>Best</p>
             </div>
             <div class='pr-4'>
-              <p class='text-2xl text-gray-900 font-semibold pt-2'>Shows</p>
+              <p class='text-2xl text-gray-900 font-semibold pt-2'>Show</p>
             </div>
           </div>
           <div class='description w-full w-2/3 mt-16 text-gray-500 text-sm'>
