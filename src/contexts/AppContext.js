@@ -4,8 +4,8 @@ import {
   useEffect,
   useContext,
   useCallback,
-} from 'react';
-import axios from 'axios';
+} from "react";
+import axios from "axios";
 
 const AppContext = createContext();
 
@@ -40,10 +40,9 @@ export const AppContextProvider = ({ children }) => {
       setShow(show.data);
       setShowLoading(false);
     } catch (error) {
-      console.log('ERRORRR NO EXISTE SHOW');
+      console.log("ERRORRR NO EXISTE SHOW");
     }
   }, []);
-
 
   return (
     <AppContext.Provider
@@ -63,7 +62,7 @@ export const AppContextProvider = ({ children }) => {
 export const useAppContext = () => {
   const context = useContext(AppContext);
   if (!context) {
-    throw new Error('useAppContexts must be used within a AppContextProvider');
+    throw new Error("useAppContexts must be used within a AppContextProvider");
   }
   return context;
 };

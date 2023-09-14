@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
-import { useAppContext } from '@/contexts/AppContext';
-import ShowSingleCard from '@/components/ShowSingleCard';
+import { useEffect } from "react";
+import { useAppContext } from "@/contexts/AppContext";
+import ShowSingleCard from "@/components/ShowSingleCard";
 
 const SingleCardContainer = ({ id }) => {
   const { show, getShow, showLoading } = useAppContext();

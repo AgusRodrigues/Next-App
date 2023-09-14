@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function AboutContainer() {
-  return (
-    <div>AboutContainer</div>
-  )
+  return <div>AboutContainer</div>;
 }
 
-export default AboutContainer 
+export default AboutContainer;

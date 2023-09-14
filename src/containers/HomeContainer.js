@@ -1,5 +1,5 @@
-import Hero from '@/components/Hero';
-import CardsContainer from './CardsContainer';
+import Hero from "@/components/Hero";
+import CardsContainer from "./CardsContainer";
 
 const HomeContainer = () => {
   return (
