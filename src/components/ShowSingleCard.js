@@ -49,7 +49,7 @@ const ShowSingleCard = ({ show }) => {
       <div className="pl-14 pb-10 flex items-center space-x-60 justify-center">
         {show.image && (
           <Image
-            className="pr-11"
+            className="pr-10"
             src={show.image?.original}
             width={500}
             height={800}
