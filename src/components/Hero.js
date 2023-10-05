@@ -2,40 +2,70 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div class="flex flex-wrap md items-center h-screen">
-      <div class="bg-white w-1/2 h-screen">
-        <div class="mx-32">
-          <h1 class="text-6xl font-bold mt-16">DC</h1>
-
-          <div class="flex mt-16 font-light text-gray-500">
-            <div class="pr-4">
-              <p class="text-2xl text-gray-900 font-semibold pt-2">The</p>
-            </div>
-            <div class="pr-4">
-              <p class="text-2xl text-gray-900 font-semibold pt-2">Best</p>
-            </div>
-            <div class="pr-4">
-              <p class="text-2xl text-gray-900 font-semibold pt-2">Shows</p>
-            </div>
+    <div className="flex flex col py-10 justify-center">
+      <div class="da relative flex flex-col justify-center overflow-hidden bg-gray-50">
+        <div class="absolute inset-0 bg-gray-800"></div>
+        <div class="group relative m-0 flex h-72 w-80 rounded-xl shadow-xl ring-gray-900/5 p-4 sm:max-w-lg">
+          <div class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-800 opacity-50 transition duration-300 ease-in-out group-hover:opacity-100">
+            <Image
+              className="hover:bg-cover"
+              src={"https://static.tvmaze.com/uploads/images/medium_portrait/405/1013952.jpg"}
+              width={680}
+              height={1000}
+              alt={"Imagen 1"}
+            />
           </div>
-          <div class="description w-full sm: md:w-2/3 mt-16 text-gray-500 text-sm">
-            <p>
-              Your Ultimate Destination for TV Show Insights! Dive into a world
-              of captivating television with us. Discover in-depth details,
-              reviews, and the latest updates on a wide range of TV shows, from
-              timeless classics to cutting-edge series. Whether you&apos;re a
-              binge-watcher, a die-hard fan, or just seeking your next
-              obsession, we&apos;ve got you covered. Explore, discuss, and stay
-              tuned for all things TV!&apos;
-            </p>
+          <div class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+            <h1 class="font-serif text-2xl font-bold text-white shadow-xl">
+              Top Trending
+            </h1>
+            <h1 class="text-sm font-light text-gray-200 shadow-xl">
+            </h1>
           </div>
-
-          <button class="uppercase mt-5 text-sm font-semibold hover:underline">
-            read more
-          </button>
         </div>
       </div>
-      <div class="w-1/2 h-screen bg-[url('/assets/dc1.png')]"></div>
+      <div class="da relative flex flex-col justify-center overflow-hidden bg-gray-50">
+        <div class="absolute inset-0 bg-gray-800"></div>
+        <div class="group relative m-0 flex h-72 w-80 rounded-xl shadow-xl ring-gray-900/5 p-4 sm:max-w-lg">
+          <div class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-800 opacity-50 transition duration-300 ease-in-out group-hover:opacity-100 ">
+          <Image
+              className="hover:bg-cover"
+              src={"https://static.tvmaze.com/uploads/images/medium_portrait/162/405053.jpg"}
+              width={680}
+              height={1000}
+              alt={"Imagen 2"}
+            />
+          </div>
+          <div class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+            <h1 class="font-serif text-2xl font-bold text-white shadow-xl">
+              Top View
+            </h1>
+            <h1 class="text-sm font-light text-gray-200 shadow-xl">
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="da relative flex flex-col justify-center overflow-hidden bg-gray-50">
+        <div class="absolute inset-0 bg-gray-800"></div>
+        <div class="group relative m-0 flex h-72 w-80 rounded-xl shadow-xl ring-gray-900/5 p-4 sm:max-w-lg">
+          <div class="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-800 opacity-50 transition duration-300 ease-in-out group-hover:opacity-100">
+          <Image
+              className="hover:bg-cover"
+              src={"https://static.tvmaze.com/uploads/images/medium_portrait/137/344032.jpg"}
+              width={680}
+              height={1000}
+              alt={"Imagen 3"}
+            />
+          </div>
+          <div class="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
+            <h1 class="font-serif text-2xl font-bold text-white shadow-xl">
+              Top Rating
+            </h1>
+            <h1 class="text-sm font-light text-gray-200 shadow-xl">
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 
 function AboutContainer() {
-  return <div>AboutContainer</div>;
+  return <div>Agustin Rodrigues</div>;
 }
 
 export default AboutContainer;
