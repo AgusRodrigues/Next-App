@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -7,15 +8,17 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gray-800"></div>
         <div className="group relative m-0 flex h-72 w-80 rounded-xl shadow-xl ring-gray-900/5 p-4 sm:max-w-lg">
           <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-800 opacity-50 transition duration-300 ease-in-out group-hover:opacity-100">
-            <Image
-              className="hover:bg-cover"
-              src={
-                "https://static.tvmaze.com/uploads/images/medium_portrait/405/1013952.jpg"
-              }
-              width={680}
-              height={1000}
-              alt={"Imagen 1"}
-            />
+            <Link href="/containers">
+              <Image
+                className="hover:bg-cover"
+                src={
+                  "https://static.tvmaze.com/uploads/images/medium_portrait/405/1013952.jpg"
+                }
+                width={680}
+                height={1000}
+                alt={"Imagen 1"}
+              />
+            </Link>
           </div>
           <div className="absolute bottom-0 z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
             <h1 className="font-serif text-2xl font-bold text-white shadow-xl">
