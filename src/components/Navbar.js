@@ -1,17 +1,14 @@
 import Image from "next/image";
 import { useAppContext } from "@/contexts/AppContext";
+import ButtonLink from "./ButtonLink";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-gray-900 sticky top-0 z-50 flex items-center justify-between bg-app-semi-dark-blue p-5 md:mx-6 md:mt-6 md:mb-[33px] md:rounded-[10px] lg:fixed lg:left-0 lg:mr-0 lg:h-3/6 lg:flex-col lg:py-9">
+      <div className="">
         <Image src={`/assets/umai.svg`} width={300} height={64} alt={`Logo`} />
-        <button
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100"
-        ></button>
-        <div className=" hidden w-full md:block md:w-auto">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div className="">
+          <ul className="pt-10 flex w-1/2 items-center justify-between lg:h-[200px] lg:flex-col 2xs:w-2/5">
             <li>
               <a
                 href="#"
