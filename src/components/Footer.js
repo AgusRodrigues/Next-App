@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"
 
 const Footer = () => {
   return (
@@ -6,20 +7,20 @@ const Footer = () => {
       <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
           <div class="px-5 py-2">
-            <a
-              href="#"
+            <Link
+              href="/about"
               class="text-base leading-6 text-gray-500 hover:text-white"
             >
               About
-            </a>
+            </Link>
           </div>
           <div class="px-5 py-2">
-            <a
-              href="#"
+            <Link
+              href="/contact"
               class="text-base leading-6 text-gray-500 hover:text-white"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div class="px-5 py-2">
             <a

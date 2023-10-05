@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
-import TrendingPage from "@/components/TrendingPage";
+import RatedPage from "@/components/RatedPage";
 import Footer from "@/components/Footer";
 
-const TrendingContainer = () => {
+const RatedContainer = () => {
   return (
     <>
       <Navbar />
-      <TrendingPage />
+      <RatedPage />
       <Footer />
     </>
   );
 };
 
-export default TrendingContainer;
+export default RatedContainer;
